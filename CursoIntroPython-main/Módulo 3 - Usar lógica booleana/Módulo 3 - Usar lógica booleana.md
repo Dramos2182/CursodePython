@@ -3,6 +3,7 @@
 Los booleanos son un tipo común en Python. Su valor solo puede ser una de dos cosas: verdadero o falso. Comprender cómo usar los valores booleanos es fundamental, ya que los necesitarás para escribir *lógica condicional*.
 
 ## Escenario: Imprimir mensajes de advertencia
+
 Supongamos que estás creando un programa que alertará a las personas de todo el mundo de que un asteroide grande y rápido se está acercando a la Tierra. Si el asteroide está lo suficientemente cerca de la Tierra como para representar un peligro, debe imprimir un mensaje de advertencia en los dispositivos de las personas. Si no hay peligro, debes hacer que todos lo sepan, para que puedan continuar con su día. Para poder proporcionar estos mensajes, tendrías que encontrar una manera de razonar si una condición es verdadera o falsa.
 
 En este módulo, usarás palabras clave y operadores booleanos para escribir varios tipos de expresiones condicionales.
@@ -11,18 +12,20 @@ En este módulo, usarás palabras clave y operadores booleanos para escribir var
 
 Al final de este módulo, podrás:
 
-* Ejecutar código en una variedad de condiciones mediante sentencias ```if, else```, y ```elif ```.
-* Combinar la lógica condicional y crear condiciones más complejas mediante el uso de operadores``` and ``` y operadores ``` or ```.
+* Ejecutar código en una variedad de condiciones mediante sentencias ``if, else``, y ``elif ``.
+* Combinar la lógica condicional y crear condiciones más complejas mediante el uso de operadores ``and`` y operadores ``or``.
 
 ## ¿Cuál es el objetivo principal?
+
 Este módulo te enseña cómo usar la lógica condicional para crear programas basados en decisiones.
 
 ---
+
 ## Lógica Booleana
 
 ### Escribir declaraciones 'if'
 
-Para expresar la lógica condicional en Python, se utilizan instrucciones ```if ```. Cuando escribes una declaración ```if```, confías en otro concepto que cubrimos en este módulo, los operadores matemáticos. Python admite los operadores lógicos comunes de las matemáticas: igual, no igual, menor que, menor que o igual a, mayor que y mayor que o igual a. Probablemente estés acostumbrado a ver estos operadores mostrados usando símbolos, que es la forma en que también se representan en Python.
+Para expresar la lógica condicional en Python, se utilizan instrucciones ``if ``. Cuando escribes una declaración ``if``, confías en otro concepto que cubrimos en este módulo, los operadores matemáticos. Python admite los operadores lógicos comunes de las matemáticas: igual, no igual, menor que, menor que o igual a, mayor que y mayor que o igual a. Probablemente estés acostumbrado a ver estos operadores mostrados usando símbolos, que es la forma en que también se representan en Python.
 
 * Iguales: ``a == b``
 * No es igual: ``a != b``
@@ -47,7 +50,6 @@ if a < b:
 
 En este ejemplo, ``a < b`` es la expresión de prueba. El programa evalúa la expresión de prueba y, a continuación, ejecuta el código dentro de la instrucción ``if`` sólo si la expresión de prueba es ``True (Verdadera)``. Si evalúa la expresión, sabe que es ``False (Falso)``, no se ejecutará ningún código que escriba en la instrucción ``if``.
 
-
 ### Escribir declaraciones ``if``
 
 Utiliza una instrucción ``if`` si deseas ejecutar código sólo si se cumple una determinada condición. La sintaxis de una instrucción ``if`` es siempre:
@@ -68,6 +70,7 @@ b = 27
 if a >= b:
     print(a)
 ```
+
 El fragmento anterior se lee de la siguiente manera (Línea por línea):
 
 ```
@@ -76,11 +79,13 @@ A la letra 'b' le asigno el valor de 27.
 SI a(93) es mayor o igual a b(27) entonces:
 Muestra (print) el valor de a(93)
 ```
+
 🤯 Estamos aprendiendo a leer el código de una forma más sencilla.
 
 En Python, el cuerpo de una instrucción ``if`` debe tener [sangría](https://es.wikipedia.org/wiki/Sangr%C3%ADa_(tipograf%C3%ADa)) . Siempre se ejecutará cualquier código que siga a una expresión de prueba que no tenga sangría:
 
 *Tips de práctica 1 y 2*
+
 ```
 a = 24
 b = 44
@@ -88,24 +93,28 @@ if a <= 0:
     print(a)
 print(b)
 ```
+
 En este ejemplo, el ``44`` como resultado se debe a que la expresión de prueba es ``False`` y la instrucción ``print(b)`` no tiene sangría en el mismo nivel que la instrucción ``if``.
 
-### ¿Qué son las declaraciones "else" y "elif"?  
+### ¿Qué son las declaraciones "else" y "elif"?
 
 ¿Qué sucede si también deseas que tu programa ejecute una pieza de código cuando tu expresión de prueba es ``False``? ¿O qué pasa si deseas incluir otra expresión de prueba?.
 
 Python tiene otras palabras clave que puedes usar para hacer declaraciones ``if`` más complejas, ``else`` y ``elif`` . Cuando se utiliza ``if``, ``else``, y ``elif`` en combinación, se pueden escribir programas complejos con varias expresiones de prueba y sentencias para ejecutar.
 
 ### Trabajando con else
+
 Cuando utilizas una instrucción, el cuerpo del programa sólo se ejecutará si la expresión de prueba es ``True``. Para agregar más código que se ejecutará cuando la expresión de prueba sea ``False``, debes agregar una instrucción ``else``.
 
 Volvamos al ejemplo de la sección anterior:
+
 ```
 a = 93
 b = 27
 if a >= b:
     print(a)
 ```
+
 En este ejemplo, si ``a`` no es mayor o igual que ``b``, no pasa nada. Supongamos que desea imprimir ``b`` si la expresión de prueba es ``False``:
 
 ```
@@ -116,6 +125,7 @@ if a >= b:
 else:
     print(b)
 ```
+
 Si la expresión de prueba es ``False``, se omite el código del cuerpo de la instrucción ``if`` y el programa continúa ejecutándose desde la instrucción ``else``. La sintaxis de una instrucción ``if/else`` es siempre:
 
 ```
@@ -126,6 +136,7 @@ else:
 ```
 
 ### Trabajando con elif
+
 En Python, la palabra clave ``elif`` es la abreviatura de *else if*. El uso de instrucciones ``elif`` te permite agregar varias expresiones de prueba al programa. Estas instrucciones se ejecutan en el orden en que están escritas, por lo que el programa ingresará una instrucción ``elif`` solo si la primera instrucción ``if`` es ``False`` . Por ejemplo:
 
 ```
@@ -136,6 +147,7 @@ if a >= b:
 elif a == b:
     print("a es igual que b")
 ```
+
 La instrucción ``elif`` de este bloque de código no se ejecutará, porque la instrucción ``if`` es ``True``.
 
 La sintaxis de una instrucción ``if/elif`` es:
@@ -163,6 +175,7 @@ elif a < b:
 else: 
     print ("a es igual que b")
 ```
+
 Un bloque de código que utiliza los tres tipos de instrucciones tiene la sintaxis siguiente:
 
 ```
@@ -195,7 +208,7 @@ else:
     print ("a es menor que b")
 ```
 
-Este fragmento de código produce la salida ```"a es menor que b"```.
+Este fragmento de código produce la salida ``"a es menor que b"``.
 
 La lógica condicional anidada sigue las mismas reglas que la lógica condicional normal dentro de cada bloque de código. Aquí hay un ejemplo de la sintaxis:
 
@@ -234,13 +247,14 @@ if a == 34 or b == 34:
 Si ambas subexpresiones son verdaderas, toda la expresión de prueba también evalúa a ``True``.
 
 Una expresión booleana que utiliza  ``or`` tiene la sintaxis siguiente:
+
 ```
 subexpresión1 or subexpresión2
 ```
 
 #### El operador ``and``
 
-También puedes conectar dos expresiones de prueba mediante el operador booleano ``and``. 
+También puedes conectar dos expresiones de prueba mediante el operador booleano ``and``.
 
 Ambas condiciones de la expresión de prueba deben ser verdaderas para que toda la expresión de prueba se evalúe en ``True``. En cualquier otro caso, la expresión de prueba es ``False``. En el ejemplo siguiente, toda la expresión de prueba se evalúa en ``False``, porque sólo una de las condiciones de las subexpresiones es ``True``:
 
@@ -261,29 +275,30 @@ subexpresión1 and subexpresión2
 
 Para resaltar la diferencia entre los dos operadores booleanos, puedes utilizar una tabla de verdad. Una tabla de verdad muestra a qué se evalúa toda la expresión de prueba en función de las dos subexpresiones.
 
-Aquí está la tabla de la verdad para: ``and`` 
+Aquí está la tabla de la verdad para: ``and``
 
-subexpresión1 | Operador | subexpresión2 |	Resultado
--------- | -------- | -------- | --------
-``True`` | ``and`` | ``True`` | ``True``
-``True`` | ``and`` | ``False`` | ``False``
-``False`` | ``and`` | ``True`` | ``False``
-``False`` | ``and`` | ``False`` | ``False``
+| subexpresión1 | Operador | subexpresión2 | Resultado |
+| -------------- | -------- | -------------- | --------- |
+| ``True``       | ``and``  | ``True``       | ``True``  |
+| ``True``       | ``and``  | ``False``      | ``False`` |
+| ``False``      | ``and``  | ``True``       | ``False`` |
+| ``False``      | ``and``  | ``False``      | ``False`` |
 
-Aquí está la tabla de la verdad para: ``or`` 
+Aquí está la tabla de la verdad para: ``or``
 
-subexpresión1 | Operador | subexpresión2 |	Resultado
--------- | -------- | -------- | --------
-``True`` | ``or`` | ``True`` | ``True``
-``True`` | ``or`` | ``False`` | ``True``
-``False`` | ``or`` | ``True`` | ``True``
-``False`` | ``or`` | ``False`` | ``False``
+| subexpresión1 | Operador | subexpresión2 | Resultado |
+| -------------- | -------- | -------------- | --------- |
+| ``True``       | ``or``   | ``True``       | ``True``  |
+| ``True``       | ``or``   | ``False``      | ``True``  |
+| ``False``      | ``or``   | ``True``       | ``True``  |
+| ``False``      | ``or``   | ``False``      | ``False`` |
 
 Curso Propedútico de Python para Launch X - Innovacción Virtual.
 
 Material desarrollado con base en los contenidos de MSLearn y la metáfora de LaunchX, traducción e implementación por: Fernanda Ochoa - Learning Producer de LaunchX.
 
 Redes:
+
 * GitHub: [FernandaOchoa](https://github.com/FernandaOchoa)
 * Twitter: [@imonsh](https://twitter.com/imonsh)
 * Instagram: [fherz8a](https://www.instagram.com/fherz8a/)
