@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Segunda practica de html</title>
+        <style></style>
+        <link rel="stylesheet" href=""> 
+    </head>
+    <body>
+        <h1>Elementos compuestos del html</h1>
+        
+        <!-- Labels o etiquetas para poder etiquetar las cosas-->
+        <label for="input1"> Ejemplo de input basico de texto</label>
+        <br>
+
+        <!--Entradas o inputs, para que el usuario enteractue-->
+        <input type="text" id="input1" name="input1">
+
+        <hr> <!--Crea una linde a de division-->
+
+        <!--Tipos de inputs-->
+        <h2>Inputs de texto</h2>
+
+        <label for="correo1">Input de correo</label>
+        <br>
+        <input type="email" name="correo1" id="correo1">
+        <br>
+        <label for="numero1">Input de numero</label>
+        <br>
+        <input type="number" name="numero1" id="numero2">
+        <br>
+        <label for="psw1">Input de contrasena</label>
+        <br>
+        <input type="password" name="psw1" id="psw1">
+        <br>
+        <label for="tel1">Input de telefono</label>
+        <br>
+        <input type="tel" name="tel1" id="tel1" maxlength="10">
+        <br>
+        <label for="url1">Input de URL</label>
+        <br>
+        <input type="url" name="url1" id="url1">
+
+        <h2>Input de selección multiple</h2><br>
+        <input type="checkbox" id="topping1" name="topping1" value="Cebolla">
+        <label for="topping1">Tacos con Cebolla</label><br>
+        <input type="checkbox" id="topping2" name="topping2" value="Cilantro">
+        <label for="topping2">Tacos con Cilantro</label><br>
+        <input type="checkbox" id="topping3" name="topping3" value="Salsa">
+        <label for="topping3">Tacos con Salsa</label><br><br>
+    
+        <h2>Input de selección única</h2><br>
+        <input type="radio" id="roja" name="salsas" value="Roja">
+        <label for="roja">Roja</label><br>
+        <input type="radio" id="verde" name="salsas" value="Verde">
+        <label for="verde">Verde</label><br>
+        <input type="radio" id="guacamole" name="salsas" value="Guacamole">
+        <label for="guacamole">Guacamole</label><br><br>
+
+    <h2>Select</h2>
+    <label for="tacos">De que la orden</label>
+    <select id="tacos" name="tacos">
+        <option value="suadero">Suadero</option>
+        <option value="pastor">Pastor</option>
+        <option value="campechanos">Campechanos</option>
+        <option value="tripa">Tripa</option>
+    </select>
+    
+    <h2>Select con Input</h2>
+    <label for="refresco">Elige tu refresco favorito</label><br>
+    <input list="refresco">
+    <datalist id="refresco">
+        <option value="Coca-Cola">
+        <option value="Manzana">
+        <option value="Naranja">
+        <option value="Mango">
+        <option value="Guayaba">
+    </datalist>
+    <br><br>
+
+    <hr>
+    
+    <h2>Input de Fecha</h2><br>
+    <input type="date" id="fecha1" name="fecha1"><br>
+    <input type="datetime-local" id="fecha2" name="fecha2"><br>
+    <input type="week" id="fecha3" name="fecha3"><br>
+    <input type="time" id="fecha4" name="fecha4"><br>
+    <input type="month" id="fecha5" name="fecha5"><br><br>
+    
+    <hr>
+
+    <h2>Input de Fecha</h2><br>
+    <input type="date" id="fecha1" name="fecha1"><br>
+    <input type="datetime-local" id="fecha2" name="fecha2"><br>
+    <input type="week" id="fecha3" name="fecha3"><br>
+    <input type="time" id="fecha4" name="fecha4"><br>
+    <input type="month" id="fecha5" name="fecha5"><br><br>
+    
+    <hr>
+    
+    <h2>Input de archivo</h2><br>
+    <input type="file" id="archivo1" name="archivo1" multiple><br><br>
+    
+    <h2>Input de Color</h2><br>
+    <input type="color" id="color1" name="color1"><br><br>
+    
+    <h2>Input de Rango</h2>
+    <label for="vol">Volumen (entre 0 y 50):</label><br>
+    <input type="range" id="vol" name="vol" min="0" max="50"><br>
+    
+    <hr>
+    
+    <h2>Input de botón</h2>
+    <input type="reset"><br>
+    <input type="submit"><br>
+    <input type="button" id="boton1" name="boton1" value="Botón 1" onclick="alert('Bienvenidos explorers');"><br><br>
+    
+    <hr>
+    <!-- Formularios -->
+    <h2>Ejemplo de Formulario</h2>
+    <form action="/accion.js" id="form1" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" form="form1">
+    
+    </body>
+    </html>
