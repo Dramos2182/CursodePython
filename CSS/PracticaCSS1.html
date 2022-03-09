@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practica 1 CSS</title>
+        <style>
+            /* SELECTORES */
+            p{
+                color: red;
+                text-align: center;
+                font-weight: bold;
+            }
+            #titulo{
+                color: green;
+                text-align: right;
+            }
+            .izquierda{
+                color: blue;
+                text-align: left;
+            }
+            p.izquierda{
+              text-decoration: underline;
+            }
+            .contraste{
+                background-color: black;
+            }
+            h1, h2, h3{
+                font-weight: bold;
+            }
+        </style>
+        <link rel="stylesheet" href=""> 
+    </head>
+    <body>
+        <h1>Header simple</h1>
+        <h2 id="titulo">Header con id de titutlo</h2>
+        <p>Parrafo simple</p>
+
+        <h3 class="izquierda">Prueba clase header 3</h3>
+        <p class="izquierda">Prueba de clase parrafo</p>
+        <p class="izquierda contraste">prueba con multiples clases</p>
+    </body>
