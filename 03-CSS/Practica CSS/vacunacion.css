@@ -23,6 +23,7 @@ button{
     font-weight: bold;
     color: white;
     border-radius: 10px;
+    height: 25px;
 }
 .titulo{
     font-size: 20px;
@@ -93,10 +94,47 @@ h2{
     padding: 20px;
     justify-content: center;
 }
-p{
+.columna0 p{
+    font-weight: 300;
+}
+.columna1 p{
+    font-weight: 300;
+}
+.columna2 p{
+    font-weight: 300;
+}
+.columna3 p{
     font-weight: 300;
 }
 a{
     text-decoration: none;
     color: #ABADB3;
+}
+.contenedor1{
+    display: flex;
+    justify-content: center;
+}
+.cuadroblanco1{
+    height: 500px;
+    width: 50%;
+    background-color: white;
+
+}
+.cuadroazul1{
+    height: 500px;
+    width: 50%;
+    background-color: #244CCE;
+}
+
+img{
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+}
+.centrar{
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
 }
