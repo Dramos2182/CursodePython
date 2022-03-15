@@ -1,16 +1,14 @@
 const cuadrado = function(x) {
     return x * x;
 }
-let numero = 4;
+let numero = 9;
 console.log(cuadrado(numero));
 
 
 const ruido = function () {
     console.log("kataplum!");
 }
-
 ruido();
-
 
 const exponencial = function (base, exponente) {
     let resultado = 1;
@@ -19,8 +17,7 @@ const exponencial = function (base, exponente) {
     }
     return resultado;
 }
-
-console.log(exponencial(4,3))
+console.log(exponencial(2,3))
 
 
 console.log(sumar(5,65));
