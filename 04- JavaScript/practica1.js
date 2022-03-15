@@ -55,3 +55,16 @@ let explorer={
 console.log(explorer);
 console.log(explorer.email);
 console.log(explorer.proPer);
+
+let numero1= 20;
+let numero2=15;
+console.log("IF - ELSE")
+if(numero1>numero2){
+    console.log("El numer 1 es mayor al numero 2");
+}
+else if(numero1=numero2){
+    console.log("Los numeros son iguales")
+}
+else{
+    console.log("El numero 2 es mayo igual a 1")
+}
