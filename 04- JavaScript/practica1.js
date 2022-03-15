@@ -56,15 +56,56 @@ console.log(explorer);
 console.log(explorer.email);
 console.log(explorer.proPer);
 
-let numero1= 20;
-let numero2=15;
 console.log("IF - ELSE")
+let numero3= 20;
+let numero4= 15;
 if(numero1>numero2){
     console.log("El numer 1 es mayor al numero 2");
 }
 else if(numero1=numero2){
-    console.log("Los numeros son iguales")
+    console.log("Los numeros son iguales");
 }
 else{
-    console.log("El numero 2 es mayo igual a 1")
+    console.log("El numero 2 es mayo igual a 1");
 }
+
+console.log("CICLOS CONDICIONALES")
+let numerowhile=5;
+while(numerowhile<=10){
+    console.log(numerowhile);
+    numerowhile= numerowhile + 2;
+}
+console.log("Ya salio el ciclo while");
+
+console.log("CICLO DO-WHILE")
+let numeroDowhile=10;
+do{
+    numeroDowhile =numeroDowhile+2;
+    console.log(numeroDowhile);
+}while(numeroDowhile<20);
+console.log("Salio de el ciclo Do While");
+
+console.log("Ciclo for")
+
+let numerofor=0
+for(numerofor;numerofor<=12;numerofor=numerofor+1){
+    console.log(numerofor);
+}
+console.log("Salimos del ciclo for "+numerofor);
+
+console.log("SWITCH")
+switch(prompt("Como esta el clima?")){
+    case "lluvioso":
+        console.log("No te vayas a mojar");
+        break;
+    case "nublado":
+        console.log("Pnte bloqueador");
+        break;
+    case "nublado":
+        console.log("Ponte bloqueador");
+        break;
+    default:
+        console.log("No se como esta el clima");
+        break;
+}
+console.log("Salimos del switch");
