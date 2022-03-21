@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pokedex.css">
+    <title>Pokedex</title>
+</head>
+<body>
+    <div class="titulo">
+        <img src="./2560px-International_Pokémon_logo.svg.png">
+    </div>
+    <div class="contenedor">
+        <div class="consola">
+            <h1>Pokedex</h1>
+            <div class="pantalla">
+                <img src="./pokeball-logo-DC23868CA1-seeklogo.com.png" alt="Pokemon" id="pokeImg" width="150px">
+            </div>
+            <input type="text" placeholder="Busca tu Pokemon" id="pokeName" name="pokeName">
+            <button onclick="fetchPokemon()">Cambiar Pokemon</button>
+        </div>
+        <div class="informacion">
+            <h1> Informacion</h1>
+            <h2 id="titulo">Nombre de Pokemon</h2>
+            <h3 id="altura"> Altura:</h3>
+            <h3 id="peso">Peso:</h3>
+            <h3 id="tipo">Tipo:</h3>
+            <h3 id="habilidad1">Habilidades 1:</h3>
+            <h3 id="habilidad2">Habilidad 2:</h3>
+        </div>
+    </div>
+</body>
+<script src="./Pokedex.js"></script>
+</html>

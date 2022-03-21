@@ -1,0 +1,85 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFFE6;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+.titulo img{
+    height: 100px;
+    width: 271px;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+}
+.informacion{
+    border-radius: 30px;
+    border: 5px black solid;
+    margin-top: 25px;
+    margin-left: 25px;
+    height: 500px;
+    width: 450px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.consola{
+    display: flex;
+    position: relative;
+    align-items:center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+    border: 8px black solid;
+    margin-top: 25px;
+    height: 550px;
+    width: 450px;
+    background-color: #FF6065;
+}
+.pantalla{
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    margin-bottom: 25px;
+    border: 4px black solid;
+    border-radius:30px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.consola h1{
+    background-color: white;
+    border: black 4px solid;
+    border-radius: 10px;
+    padding: 5px ;
+}
+.consola button{
+    margin-top: 10px;
+    background-color: white;
+    border: black 4px solid;
+    border-radius: 5px; ;
+    padding: 5px;
+}
+.consola input{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: black 4px solid;
+}
+
+.pantalla img{
+    background-color: white;
+}
+.informacion h1{
+    background-color: white;
+}
+.informacion h2{
+    background-color: white;
+}
+.informacion h3{
+    background-color: white;
+}
