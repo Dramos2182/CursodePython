@@ -37,6 +37,7 @@ export default {
 
 <style scoped>
 .adornos{
+    margin-top:50px ;
     margin-left: 0px;
     padding: 0px;
     margin-left: 0px;

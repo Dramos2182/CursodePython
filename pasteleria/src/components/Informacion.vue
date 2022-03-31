@@ -41,6 +41,9 @@ export default {
 </script>
 
 <style scoped>
+.informacion{
+    margin-top: 50px;
+}
 footer{
     display: flex;
     flex-wrap:wrap ;
@@ -72,7 +75,7 @@ h1{
 .columna1{
     margin-top: 20px;
     max-width: 400px;
-    margin-left: 30%;
+    margin-left: 10%;
 }
 h2{
     color: rosybrown;
