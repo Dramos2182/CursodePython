@@ -1,7 +1,7 @@
 <template>
     <div class="titulo">
         <img src="https://images.squarespace-cdn.com/content/v1/585977add1758ec9d1664f6d/1640365457550-N6C2M7G9MC0EO1VZV7N5/WEB-02-02.jpg" alt="pastel"><br>
-        <a href="../views/AboutView.vue">Ordena Ya!</a>
+        <router-link to="/about" class="nav-inblock">Ordena ya!!</router-link>
     </div>
 </template>
 

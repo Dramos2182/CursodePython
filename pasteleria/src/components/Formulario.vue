@@ -11,6 +11,22 @@
         <label for="imagen">Imagen de ejemplo</label><br>
         <input type="file" name="imagen" id="imagen"><br><br>
 
+         <h2>Para cuantas personas sera el pastel?</h2><br>
+         <input type="radio" id="personas" name="personas">
+         <label for="personas">20 personas</label><br><br>
+         <input type="radio" id="personas1" name="personas1">
+         <label for="personas1">50 personas</label><br><br>
+         <input type="radio" id="personas2" name="personas2">
+         <label for="personas2">100 personas</label><br><br>
+         <input type="radio" id="personas3" name="personas3">
+         <label for="personas3">250 personas</label><br><br>
+         <input type="radio" id="personas4" name="personas4">
+         <label for="personas4">500 personas</label><br><br>
+         <input type="radio" id="personas5" name="personas5">
+         <label for="personas5">1000 personas</label><br><br><br>
+
+
+
         <h2>Tipo de pastel</h2>
         <input type="radio" id="Esponjoso" name="Tdp" value="Esponjoso">
         <label for="Esponjoso">Esponjoso</label><br>
@@ -79,7 +95,7 @@ label{
     text-align: left;
 }
 #imagen{
-    height: 30px;
+    height: 25px;
     width: 300px;
     text-align: center;
     justify-content: center;
