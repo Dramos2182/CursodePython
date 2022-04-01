@@ -1,32 +1,27 @@
 <template>
-    <form name="formulario" action="#">
+    <form name="formulario" method="POST" >
         <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre" requiered><br><br>
+        <input type="text" id="nombre" name="nombre" requiered="true"><br><br>
         <label for="correo1">Correo:</label><br>
-        <input type="email" name="correo1" id="correo1" required><br><br>
+        <input type="email" name="correo1" id="correo1" required="true"><br><br>
         <label for="tel1" name="tel1" id="tel1"> telefono:</label><br>
-        <input type="tel" id="tel1" name="tel1" maxlength="10" required><br><br>
+        <input type="tel" id="tel1" name="tel1" maxlength="10" required="true"><br><br>
         <label for="detalles1">Descripcion general del pastel:</label><br>
-        <input type="text" name="detalles1" id="detalles1"><br><br>
+        <textarea name="detalles1" id="detalles1" cols="30" rows="10"></textarea><br><br>
         <label for="imagen">Imagen de ejemplo</label><br>
         <input type="file" name="imagen" id="imagen"><br><br>
 
          <h2>Para cuantas personas sera el pastel?</h2><br>
-         <input type="radio" id="personas" name="personas">
-         <label for="personas">20 personas</label><br><br>
-         <input type="radio" id="personas1" name="personas1">
-         <label for="personas1">50 personas</label><br><br>
-         <input type="radio" id="personas2" name="personas2">
-         <label for="personas2">100 personas</label><br><br>
-         <input type="radio" id="personas3" name="personas3">
-         <label for="personas3">250 personas</label><br><br>
-         <input type="radio" id="personas4" name="personas4">
-         <label for="personas4">500 personas</label><br><br>
-         <input type="radio" id="personas5" name="personas5">
-         <label for="personas5">1000 personas</label><br><br><br>
-
-
-
+         <label for="personas">Para cuantas personas?</label>
+         <select name="personas" id="personas">
+             <option value="20 pesonas">20 personas</option>
+             <option value="50 pesonas">50 personas</option>
+             <option value="100 pesonas">100 personas</option>
+             <option value="250 pesonas">250 personas</option>
+             <option value="500 pesonas">500 personas</option>
+             <option value="1000 pesonas">100 personas</option>
+         </select><br><br>
+         
         <h2>Tipo de pastel</h2>
         <input type="radio" id="Esponjoso" name="Tdp" value="Esponjoso">
         <label for="Esponjoso">Esponjoso</label><br>
@@ -53,14 +48,14 @@
         <label for="sabor4">Red velvet</label><br><br>
 
         <h2>Que toppings o adornos vas a querer en tu pastel?</h2>
-        <input type="checkbox" id="sabor1" name="sabor1" value="Chocolate">
-        <label for="sabor1">Chocolate</label><br>
-        <input type="checkbox" id="sabor2" name="sabor2" value="Vainilla">
-        <label for="sabor2">Vainilla</label><br>
-        <input type="checkbox" id="sabor3" name="sabor3" value="Fresa">
-        <label for="sabor3">Fresa</label><br>
-        <input type="checkbox" id="sabor4" name="sabor4" value="Red velvet">
-        <label for="sabor4">Red velvet</label><br><br>
+        <input type="checkbox" id="adorno1" name="adorno1" value="Chispas de chocolate">
+        <label for="adorno1">Chispas de Chocolate</label><br>
+        <input type="checkbox" id="adorno2" name="adorno2" value="Chispas de colores">
+        <label for="adorno2">Chispas de colores</label><br>
+        <input type="checkbox" id="adorno3" name="adorno3" value="Frutas">
+        <label for="adorno3">Frutas</label><br>
+        <input type="checkbox" id="adorno4" name="adorno4" value="Galletas oreo">
+        <label for="adorno4">Galletas oreo</label><br><br>
 
         <input type="submit" id="submit">
     </form>
@@ -104,5 +99,17 @@ label{
     margin-left: 50%;
     height: 30px;
     width: 100px;
+}
+
+#personas{
+    margin-left: 20px;
+    border: 2px solid rosybrown;
+    color: rosybrown;
+    border-radius: 5px;
+}
+#detalles1{
+    border: 2px solid rosybrown;
+    color: rosybrown;
+    border-radius: 5px;
 }
 </style>

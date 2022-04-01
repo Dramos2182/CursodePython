@@ -2,7 +2,8 @@
   <nav>
   <img src="../src/assets/logoPasteleria.png" alt="">
     <router-link to="/" class="nav-inblock">Inicio</router-link> 
-    <router-link to="/about" class="nav-inblock">Pedido</router-link>
+    <router-link to="/about" class="nav-inblock">Ordena</router-link>
+    <router-link to="/pedido" class="nav-inblock">Pedido</router-link>
   </nav>
   <router-view/>
 </template>
